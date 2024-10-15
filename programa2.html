@@ -17,13 +17,18 @@
             document.write(texto)
             pulaLinha()
         }
-        let pesoBruno = 63
-        let alturaBruno = 1.72
 
-        let imcBruno = pesoBruno/(alturaBruno*alturaBruno)
+        function calcularIMC(peso, altura){
+           return imc = peso/(altura*altura)
 
-        mostra ('O IMC de Bruno é ${imcBruno}') //template string
-        mostra ('O IMC de Bruno é ' + imcBruno) //
+        }
+
+        let imcBruno = calcularIMC(63, 1.72)
+
+        mostra('O IMC de Bruno é: ' + imcBruno)
+
+        
+
 
     </script>
 </body>

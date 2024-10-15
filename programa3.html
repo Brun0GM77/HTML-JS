@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação de Time</title>
+</head>
+<body>
+    <script>
+  function pulaLinha(){
+            document.write('<br><br>')
+        }
+
+        function mostra(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        mostra('número de pontos do meu time no Brasileirão serie B')
+
+        let nomeTime = prompt('qual o nome do seu time?')
+        let vitorias = prompt('Quantas vitórias o seu time obteve durante o campeonato?')
+        let empates = prompt('Quantos empates o seu time teve?')
+        let perdas = prompt('Quantas derrotas seu time teve?')
+
+        let pontuacao = parseInt(vitorias * 3) + parseInt(empates)
+
+        mostra(`O ${nomeTime} obteve um total de ${pontuacao} pontos`)
+
+        if(pontuacao > 80){
+            mostra('Parabens, seu time passou para serie A do Brasileirão')
+
+        }else if(pontuacao < 20){
+        mostra('Que pena! está rebaixado para Serie C!')
+
+        }else {
+            mostra('Seu continua na serie B')
+        }
+        
+    </script>
+    
+</body>
+</html>
