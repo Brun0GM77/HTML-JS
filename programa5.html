@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos das olimpíadas</title>
+</head>
+<body>
+    <script>
+    function pulaLinha(){
+            document.write('<br><br>')
+        }
+
+        function mostra(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        let anoInicial = 1896
+
+        //Jeito trabalhoso
+        //mostra(`No ano ${anoInicial} teve olímpiadas`)
+        //mostra(`No ano ${anoInicial + 4} teve olímpiadas`)
+        //mostra(`No ano ${anoInicial + 8} teve olímpiadas`)
+        //mostra(`No ano ${anoInicial + 12} teve olímpiadas`)
+
+        while(anoInicial <= 2024){
+            mostra(`${anoInicial} teve olimpíadas`)
+            anoInicial = anoInicial + 4
+        }
+
+        
+        </script>
+    
+</body>
+</html>
