@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <script>
+function pulaLinha(){
+            document.write('<br><br>')
+        }
+
+        function mostra(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        let materia = prompt('Qual a matéria você quer saber a média?')
+
+        let trimestre = parseInt(prompt('Digite a quantidade de trimestres que você fez:'))
+
+        let totalNotas = 0
+
+        for(let contador = 1; contador <= trimestre; contador++){
+            let nota = parseInt(prompt('Qual a sua nota?'))
+            totalNotas = totalNotas + nota
+        }
+
+        let media = totalNotas/trimestre
+        mostra(media)
+
+
+
+
+
+    </script>
+</body>
+</html>
