@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+
+}
+:root{
+    --fonte-titulo:"Lilita One", sans-serif;
+    --fonte-texto:"Playwrite GB S", cursive;
+    --Verde-Caçador: #386641ff;
+--Asparagus: #6a994eff;
+--Verde-Amarelo: #a7c957ff;
+--Pergaminho: #f2e8cfff;
+--Brilho-Agridoce: #bc4749ff;
+
+}
+body{
+    background-color: var(--Verde-Caçador);
+    font-family: var(--fonte-texto);
+}
+header, footer{
+    background-color: var(--Pergaminho);
+    padding: 2em;
+    color: var(--Verde-Amarelo);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: var(--Asparagus)
+} 
